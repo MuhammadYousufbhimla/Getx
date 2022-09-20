@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx/transalations.dart';
@@ -15,65 +17,63 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
+
     return GetMaterialApp(
-      translations:Apptransaltion(),
-      locale: const Locale("en","US"),
+      debugShowCheckedModeBanner:false,
+      translations: Apptransaltion(),
+      locale: const Locale('en','US'),
       title: 'Getx Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home:  MyHomePage(title: 'title'.tr),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-
-
-
- void _changelanguage(){
-Get.updateLocale(const Locale("ur","Pk"));
- }
-  @override
-  Widget build(BuildContext context) {
+      color: Colors.lightBlue,
+      home:Homepage() ,
     
+    
+    
+    );
+    
+    
+  }
+  
+}
+class Homepage extends StatefulWidget {
+  const Homepage({Key? key}) : super(key: key);
+
+  @override
+  State<Homepage> createState() => _MyWidgetState();
+}
+
+class _MyWidgetState extends State<Homepage> {
+  @override
+   void _changelanguage(){
+
+
+Get.updateLocale(const Locale("ur","Pk"));
+
+
+   }
+  Widget build(BuildContext context) {
+
     return Scaffold(
-      appBar: AppBar(
-      
-        title: Text(widget.title),
+
+      appBar: AppBar(title:Text('title'.tr),),
+    body: Center(
+      child: Column(
+     mainAxisAlignment: MainAxisAlignment.center,
+        // crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text('sent1'.tr,
+          style: TextStyle(fontSize: 20),
+          ),
+          
+        ],
       ),
-      body: Center(
-      
-        child: Column(
-        
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-               Text(
-             'sent1'.tr, // .tr tarnsaltion k lie lgaya hai  
-             
-            style: TextStyle(fontSize: 20),
-            ),
-            
-           
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
+    ),
+     floatingActionButton: FloatingActionButton(
         onPressed: _changelanguage,
         tooltip: 'Increment',
         child: const Icon(Icons.change_circle),
-      ), 
+     )  
     );
+    
   }
 }
+
