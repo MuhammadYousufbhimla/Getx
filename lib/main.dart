@@ -121,6 +121,10 @@ Get.updateLocale(const Locale("en","US"));
                                else if(_dropDownValue=='Urdu'){
                                 _changelanguage();
                                }
+                               else if(_dropDownValue=='Arabic'){
+                                Get.updateLocale(const Locale("ar","Ar"));
+                                
+                               }
                               print(_dropDownValue);
                             });
 
