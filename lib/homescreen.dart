@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx/secondscreen.dart';
 
 class Homescreen extends StatefulWidget {
   const Homescreen({super.key});
@@ -56,25 +57,39 @@ class _HomescreenState extends State<Homescreen> {
                 subtitle: Text("Details card Two "),
                 onTap: (() {
                   Get.bottomSheet(Container(
+                    padding: EdgeInsets.all(10),
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.purpleAccent,
+                      borderRadius: BorderRadius.circular(25),
+                    ),
                     child: Column(
                       children: [
-        ListTile(leading: Icon(Icons.light_mode),
-        title:Text( 'Light theme') ,
-         onTap: (() => Get.changeTheme(ThemeData.light())),
-       
-        ),
-               ListTile(leading: Icon(Icons.dark_mode),
-        title:Text( 'Dark theme') ,
-         onTap: (() => Get.changeTheme(ThemeData.dark())),
-       
-        ),
-  
+                        ListTile(
+                          leading: Icon(Icons.light_mode),
+                          title: Text('Light theme'),
+                          onTap: (() => Get.changeTheme(ThemeData.light())),
+                        ),
+                        ListTile(
+                          leading: Icon(Icons.dark_mode),
+                          title: Text('Dark theme'),
+                          onTap: (() => Get.changeTheme(ThemeData.dark())),
+                        ),
                       ],
                     ),
                   ));
                 }),
               ),
             ),
+            ElevatedButton(
+                onPressed: () {
+                  Get.to(
+                    Secondscreen(
+                      name: 'Hello Yousuf',
+                    ),
+                  );
+                },
+                child: Text("Second Screen"))
           ],
         ),
       ),
