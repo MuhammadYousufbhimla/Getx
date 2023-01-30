@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx/homescreen.dart';
+import 'package:getx/secondscreen.dart';
 import 'package:getx/transalations.dart';
 
 void main() {
@@ -26,6 +27,10 @@ class _MyAppState extends State<MyApp> {
       title: 'Getx Demo',
       color: Colors.lightBlue,
       home: Homescreen(),
+      getPages: [
+        GetPage(name: '/', page: (() => Homescreen())),
+        GetPage(name: '/secondscreen', page: ()=>Secondscreen())
+      ],
     );
   }
 }
