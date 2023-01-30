@@ -20,7 +20,9 @@ class _HomescreenState extends State<Secondscreen> {
         title: Text("Second page "+widget.name),
       ),
       body: Container(
-        child: Text("Second screen"),
+        child: Center(child: InkWell(
+          onTap: (() => Get.back()),
+          child: Text("Second screen"))),
       ),
     );
 
