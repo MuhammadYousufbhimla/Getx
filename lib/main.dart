@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
       getPages: [
         GetPage(name: '/', page: (() => Homescreen())),
         GetPage(name: '/secondscreen', page: ()=>Secondscreen()),
-         GetPage(name: '/languagescreen', page: ()=>languagescreen())
+         GetPage(name: '/language', page: ()=>languagescreen())
       ],
     );
   }

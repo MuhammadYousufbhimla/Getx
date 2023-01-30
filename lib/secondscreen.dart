@@ -22,7 +22,7 @@ class _HomescreenState extends State<Secondscreen> {
       ),
       body: Container(
         child: Center(child: InkWell(
-         onTap: (() => Get.toNamed('/languagescreen')),
+         onTap: (() => Get.toNamed('/language')),
 
           child: Text("Language screen"))),
       ),
