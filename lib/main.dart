@@ -1,7 +1,8 @@
-import 'dart:html';
+
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx/homescreen.dart';
 import 'package:getx/transalations.dart';
 
 void main() {
@@ -24,7 +25,7 @@ class _MyAppState extends State<MyApp> {
       locale: const Locale('en', 'US'),
       title: 'Getx Demo',
       color: Colors.lightBlue,
-      home: Homepage(),
+      home: Homescreen(),
     );
   }
 }
@@ -40,15 +41,8 @@ class _MyWidgetState extends State<Homepage> {
   @override
   String _dropDownValue = "";
   String dropdownvalue = 'Item 1';
-  int _value = 1;
-  var items = [
-    'Item 1',
-    'Item 2',
-    'Item 3',
-    'Item 4',
-    'Item 5',
-  ];
 
+ 
   void _changelanguage() {
     Get.updateLocale(const Locale("ur", "Pk"));
   }
