@@ -16,7 +16,7 @@ class _HomescreenState extends State<Homescreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home screen"),
+        title: Text("Home page "),
       ),
       body: Container(
         margin: EdgeInsets.all(10),
@@ -24,7 +24,7 @@ class _HomescreenState extends State<Homescreen> {
           children: [
             Card(
               child: ListTile(
-                title: Text("Card 1"),
+                title: Text("Snackbar"),
                 subtitle: Text("Details card one "),
                 onTap: (() => Get.snackbar("Successfully click", "Done",
                     icon: Icon(Icons.add),
@@ -35,10 +35,10 @@ class _HomescreenState extends State<Homescreen> {
             ),
             Card(
               child: ListTile(
-                title: Text("Card 2"),
+                title: Text("Dialog box"),
                 subtitle: Text("Details card Two "),
                 onTap: (() => Get.defaultDialog(
-                  middleTextStyle: TextStyle(color: Colors.teal),
+                    middleTextStyle: TextStyle(color: Colors.teal),
                     // backgroundColor: Colors.lightGreenAccent,
                     title: 'Delete chat',
                     middleText: 'Are you sure delete?',
@@ -48,6 +48,31 @@ class _HomescreenState extends State<Homescreen> {
                       Get.back();
                     },
                     onConfirm: () {})),
+              ),
+            ),
+            Card(
+              child: ListTile(
+                title: Text("Bottomsheet box Theme change"),
+                subtitle: Text("Details card Two "),
+                onTap: (() {
+                  Get.bottomSheet(Container(
+                    child: Column(
+                      children: [
+        ListTile(leading: Icon(Icons.light_mode),
+        title:Text( 'Light theme') ,
+         onTap: (() => Get.changeTheme(ThemeData.light())),
+       
+        ),
+               ListTile(leading: Icon(Icons.dark_mode),
+        title:Text( 'Dark theme') ,
+         onTap: (() => Get.changeTheme(ThemeData.dark())),
+       
+        ),
+  
+                      ],
+                    ),
+                  ));
+                }),
               ),
             ),
           ],
