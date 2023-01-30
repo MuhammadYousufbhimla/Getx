@@ -81,15 +81,14 @@ class _HomescreenState extends State<Homescreen> {
                 }),
               ),
             ),
-            TextButton(onPressed: (){
-              Get.toNamed('/secondscreen',arguments: ['Youusf'],
-
-              );           
-            }, child: Text('Secondscreen'))
-            // InkWell(
-            //   onTap: () => Get.toNamed('/secondscreen',arguments: ['Youusf']),
-            //   child: Text("Second Screen"))
-          
+            TextButton(
+                onPressed: () {
+                  Get.toNamed(
+                    '/secondscreen',
+                    arguments: ['Muhammad','Yousuf'],
+                  );
+                },
+                child: Text('Secondscreen'))
           ],
         ),
       ),
