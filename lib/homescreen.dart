@@ -85,7 +85,7 @@ class _HomescreenState extends State<Homescreen> {
                 onPressed: () {
                   Get.toNamed(
                     '/secondscreen',
-                    arguments: ['Muhammad','Yousuf'],
+                    arguments: ['Muhammad','Yousuf','Noora'],
                   );
                 },
                 child: Text('Secondscreen'))
