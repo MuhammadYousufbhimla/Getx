@@ -28,6 +28,7 @@ class _HomescreenState extends State<Homescreen> {
                 title: Text("Snackbar"),
                 subtitle: Text("Details card one "),
                 onTap: (() => Get.snackbar("Successfully click", "Done",
+              
                     icon: Icon(Icons.add),
                     backgroundColor: Colors.blue,
                     colorText: Colors.orange,
