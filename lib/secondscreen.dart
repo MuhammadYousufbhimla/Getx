@@ -18,7 +18,7 @@ class _HomescreenState extends State<Secondscreen> {
     return Scaffold(
       appBar: AppBar(
         // title: Text("Second page "+widget.name),
-        title: Text("Second page "+Get.arguments[0]),
+        title: Text("Second page "+Get.arguments[1]),
       ),
       body: Container(
         child: Center(child: TextButton(
