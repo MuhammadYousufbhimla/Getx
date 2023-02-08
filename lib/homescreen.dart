@@ -68,12 +68,12 @@ class _HomescreenState extends State<Homescreen> {
                       children: [
                         ListTile(
                           leading: Icon(Icons.light_mode),
-                          title: Text('Light theme'),
+                          title: Text('Light themefe'),
                           onTap: (() => Get.changeTheme(ThemeData.light())),
                         ),
                         ListTile(
                           leading: Icon(Icons.dark_mode),
-                          title: Text('Dark theme'),
+                          title: Text('Dark themefdef'),
                           onTap: (() => Get.changeTheme(ThemeData.dark())),
                         ),
                       ],
