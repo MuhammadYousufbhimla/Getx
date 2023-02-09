@@ -76,6 +76,16 @@ class _HomescreenState extends State<Homescreen> {
                           title: Text('Dark theme'),
                           onTap: (() => Get.changeTheme(ThemeData.dark())),
                         ),
+                         ListTile(
+                          leading: Icon(Icons.dark_mode),
+                          title: Text('Dark theme'),
+                          onTap: (() => Get.changeTheme(ThemeData.dark())),
+                        ),
+                         ListTile(
+                          leading: Icon(Icons.dark_mode),
+                          title: Text('Dark theme'),
+                          onTap: (() => Get.changeTheme(ThemeData.dark())),
+                        ),
                       ],
                     ),
                   ));
