@@ -76,16 +76,7 @@ class _HomescreenState extends State<Homescreen> {
                           title: Text('Dark theme'),
                           onTap: (() => Get.changeTheme(ThemeData.dark())),
                         ),
-                         ListTile(
-                          leading: Icon(Icons.dark_mode),
-                          title: Text('Dark theme'),
-                          onTap: (() => Get.changeTheme(ThemeData.dark())),
-                        ),
-                         ListTile(
-                          leading: Icon(Icons.dark_mode),
-                          title: Text('Dark theme'),
-                          onTap: (() => Get.changeTheme(ThemeData.dark())),
-                        ),
+                     
                       ],
                     ),
                   ));
@@ -95,7 +86,7 @@ class _HomescreenState extends State<Homescreen> {
             TextButton(
                 onPressed: () {
                   Get.toNamed(
-                    '/secondscreen',
+                    '/SignIn',
                     arguments: ['Muhammad','Yousuf','Noora'],
                   );
                 },
