@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
       color: Colors.lightBlue,
       home: Homescreen(),
       getPages: [
-        GetPage(name: '/', page: (() => SignIn())),
+        GetPage(name: '/', page: (() => Homescreen())),
         GetPage(name: '/secondscreen', page: ()=>Secondscreen()),
          GetPage(name: '/language', page: ()=>languagescreen())
       ],
