@@ -26,7 +26,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       translations: Apptransaltion(),
       locale: const Locale('en', 'US'),
-      title: 'Getx Demo',
+      title: 'Getx Demdo',
       color: Colors.lightBlue,
       home: Homescreen(),
       getPages: [
