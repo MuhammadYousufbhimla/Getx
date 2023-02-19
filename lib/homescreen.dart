@@ -86,12 +86,17 @@ class _HomescreenState extends State<Homescreen> {
             TextButton(
                 onPressed: () {
                   Get.toNamed(
-                    '/SignIn',
+                    '/secondscreen',
                     arguments: ['Muhammad','Yousuf','Noora'],
                   );
                 },
-                child: Text('Secondscreen'))
+                child: Text('Secondscreen')),
+          TextButton(
+            onPressed: (){Get.toNamed('/height1');
+            },
+            child: Text("Height screen")),
           ],
+          
         ),
       ),
     );

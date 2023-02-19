@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx/height&width.dart';
 import 'package:getx/homescreen.dart';
 import 'package:getx/langugae.dart';
 import 'package:getx/login.dart';
@@ -26,13 +27,14 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       translations: Apptransaltion(),
       locale: const Locale('en', 'US'),
-      title: 'Getx Demdo',
+      title: 'Getx Demo',
       color: Colors.lightBlue,
       home: Homescreen(),
       getPages: [
         GetPage(name: '/', page: (() => Homescreen())),
         GetPage(name: '/secondscreen', page: ()=>Secondscreen()),
-         GetPage(name: '/language', page: ()=>languagescreen())
+         GetPage(name: '/language', page: ()=>languagescreen()),
+         GetPage(name: '/height1',page:()=>hegwidth()),
       ],
     );
   }
