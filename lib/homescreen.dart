@@ -95,6 +95,10 @@ class _HomescreenState extends State<Homescreen> {
             onPressed: (){Get.toNamed('/height1');
             },
             child: Text("Height screen")),
+            TextButton(
+            onPressed: (){Get.toNamed('/counters');
+            },
+            child: Text("Counter screen")),
           ],
           
         ),

@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx/countergetx.dart';
 import 'package:getx/height&width.dart';
 import 'package:getx/homescreen.dart';
 import 'package:getx/langugae.dart';
@@ -35,6 +36,7 @@ class _MyAppState extends State<MyApp> {
         GetPage(name: '/secondscreen', page: ()=>Secondscreen()),
          GetPage(name: '/language', page: ()=>languagescreen()),
          GetPage(name: '/height1',page:()=>hegwidth()),
+          GetPage(name: '/counters',page:()=>counter()),
       ],
     );
   }
