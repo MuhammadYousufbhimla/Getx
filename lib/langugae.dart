@@ -84,6 +84,7 @@ class _MyWidgetState extends State<languagescreen> {
                 onPressed: () {
                   Get.back();
                   Get.back();
+                  
                 },
                 child: Text("Go home screen"))
           ],

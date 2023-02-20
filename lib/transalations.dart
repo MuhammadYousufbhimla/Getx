@@ -7,6 +7,7 @@ class Apptransaltion extends Translations{
    "en_US":{
     "sent1":"Welcome to My First getx Project.\n My name is Muhammad Yousuf\n Thanks...",
     "title":"Demo Home Page",
+    "screen":"This is height screen",
    },
    
    "ur_Pk":{

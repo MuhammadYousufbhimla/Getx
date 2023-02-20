@@ -19,7 +19,7 @@ class _hegwidthState extends State<hegwidth> {
           height: Get.height * 1,
           width: Get.width * 0.5,
           color: Colors.green,
-          child: Text("This is a Height"),
+          child: Text('screen'.tr),
         ),
       ),
     );
