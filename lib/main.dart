@@ -9,6 +9,7 @@ import 'package:getx/langugae.dart';
 import 'package:getx/login.dart';
 import 'package:getx/opacity.dart';
 import 'package:getx/secondscreen.dart';
+import 'package:getx/swithchbtn.dart';
 import 'package:getx/transalations.dart';
 
 void main() {
@@ -39,6 +40,7 @@ class _MyAppState extends State<MyApp> {
          GetPage(name: '/height1',page:()=>hegwidth()),
           GetPage(name: '/counters',page:()=>counter()),
            GetPage(name: '/opacity',page:()=>opacitycheck()),
+                    GetPage(name: '/switch',page:()=>switchbtn()),
       ],
     );
   }

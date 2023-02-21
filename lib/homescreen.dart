@@ -103,6 +103,11 @@ class _HomescreenState extends State<Homescreen> {
             onPressed: (){Get.toNamed('/opacity');
             },
             child: Text("Opacity screen")),
+             TextButton(
+            onPressed: (){Get.toNamed('/switch');
+            },
+            child: Text("Notification switch screen")),
+            
           ],
           
         ),
