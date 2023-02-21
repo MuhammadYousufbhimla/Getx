@@ -7,6 +7,7 @@ import 'package:getx/height&width.dart';
 import 'package:getx/homescreen.dart';
 import 'package:getx/langugae.dart';
 import 'package:getx/login.dart';
+import 'package:getx/opacity.dart';
 import 'package:getx/secondscreen.dart';
 import 'package:getx/transalations.dart';
 
@@ -37,6 +38,7 @@ class _MyAppState extends State<MyApp> {
          GetPage(name: '/language', page: ()=>languagescreen()),
          GetPage(name: '/height1',page:()=>hegwidth()),
           GetPage(name: '/counters',page:()=>counter()),
+           GetPage(name: '/opacity',page:()=>opacitycheck()),
       ],
     );
   }

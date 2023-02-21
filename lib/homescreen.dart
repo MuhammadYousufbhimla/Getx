@@ -99,6 +99,10 @@ class _HomescreenState extends State<Homescreen> {
             onPressed: (){Get.toNamed('/counters');
             },
             child: Text("Counter screen")),
+             TextButton(
+            onPressed: (){Get.toNamed('/opacity');
+            },
+            child: Text("Opacity screen")),
           ],
           
         ),
