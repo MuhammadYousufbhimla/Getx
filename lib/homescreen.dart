@@ -111,6 +111,10 @@ class _HomescreenState extends State<Homescreen> {
             onPressed: (){Get.toNamed('/favourite');
             },
             child: Text("Favourite App")),
+              TextButton(
+            onPressed: (){Get.toNamed('/imagepick');
+            },
+            child: Text("Picker Image")),
             
           ],
           

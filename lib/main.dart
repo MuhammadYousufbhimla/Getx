@@ -4,6 +4,7 @@ import 'package:getx/countergetx.dart';
 import 'package:getx/favouriteapp.dart';
 import 'package:getx/height&width.dart';
 import 'package:getx/homescreen.dart';
+import 'package:getx/imagepicker.dart';
 import 'package:getx/langugae.dart';
 import 'package:getx/opacity.dart';
 import 'package:getx/secondscreen.dart';
@@ -40,6 +41,7 @@ class _MyAppState extends State<MyApp> {
         GetPage(name: '/opacity',page:()=>opacitycheck()),
         GetPage(name: '/switch',page:()=>switchbtn()),
         GetPage(name: '/favourite',page:()=>favouriteapp()),
+        GetPage(name: '/imagepick',page:()=>pickerimage()),
       ],
     );
   }

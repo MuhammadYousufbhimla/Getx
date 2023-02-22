@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:image_picker/image_picker.dart';
 
 
 class countercontrollers extends GetxController{
@@ -7,6 +9,7 @@ class countercontrollers extends GetxController{
   RxBool notification=false.obs; 
   RxList <String> fruitlist=["Apple","Mango","Banana","Orange"].obs;
   RxList templist=[].obs;
+  RxString imagepath="".obs;
 
 // Create method counter
   incrementcounter(){
@@ -44,4 +47,16 @@ addtofavourite(String value){
     Get.snackbar('Message ',"Remove Favouite", snackPosition: SnackPosition.BOTTOM);
   print(templist);
  }
+
+// Create method image picker
+
+Future getimage()async{
+   final ImagePicker _picker=ImagePicker();
+   final image=await _picker.pickImage(source: ImageSource.gallery);
+   if(image!=null){
+    imagepath.value=image.path.toString();
+   }
+ 
+}
+
 }
