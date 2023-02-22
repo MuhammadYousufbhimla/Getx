@@ -29,7 +29,9 @@ class _pickerimageState extends State<pickerimage> {
             ),
           
          SizedBox(height: Get.height*0.3,),
-        ElevatedButton(onPressed: (){}, child: Text("Pick Image"))
+        ElevatedButton(onPressed: (){
+          controller.getimage();
+        }, child: Text("Pick Image"))
         ],
       )
     );
