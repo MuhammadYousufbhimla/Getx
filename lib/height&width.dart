@@ -14,8 +14,8 @@ class _hegwidthState extends State<hegwidth> {
     return Scaffold(
       body: Center(
         child: Container(
-          height: Get.height * 1,
-          width: Get.width * 0.5,
+          height: Get.height *0.3,
+          width: Get.width * 0.3,
           color: Colors.green,
           child: Text('screen'.tr),
         ),

@@ -15,13 +15,16 @@ class _switchbtnState extends State<switchbtn> {
   final countercontrollers controller=Get.put(countercontrollers());
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Theme screen"),),
       body: Container(child: Row(
+     
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          Padding(padding: EdgeInsets.all(10)),
           Text("Dark theme"),
          Obx((() =>  Switch(value: controller.notification.value, 
           onChanged: (value){
-            // Get.changeTheme(ThemeData.dark());
+            
             controller.setnotification(value);
               if(value ==true){
                 print("darrk");

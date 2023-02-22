@@ -107,6 +107,10 @@ class _HomescreenState extends State<Homescreen> {
             onPressed: (){Get.toNamed('/switch');
             },
             child: Text("Notification switch screen")),
+              TextButton(
+            onPressed: (){Get.toNamed('/favourite');
+            },
+            child: Text("Favourite App")),
             
           ],
           

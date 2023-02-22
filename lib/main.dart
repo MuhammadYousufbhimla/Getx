@@ -1,12 +1,10 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx/countergetx.dart';
+import 'package:getx/favouriteapp.dart';
 import 'package:getx/height&width.dart';
 import 'package:getx/homescreen.dart';
 import 'package:getx/langugae.dart';
-import 'package:getx/login.dart';
 import 'package:getx/opacity.dart';
 import 'package:getx/secondscreen.dart';
 import 'package:getx/swithchbtn.dart';
@@ -36,11 +34,12 @@ class _MyAppState extends State<MyApp> {
       getPages: [
         GetPage(name: '/', page: (() => Homescreen())),
         GetPage(name: '/secondscreen', page: ()=>Secondscreen()),
-         GetPage(name: '/language', page: ()=>languagescreen()),
-         GetPage(name: '/height1',page:()=>hegwidth()),
-          GetPage(name: '/counters',page:()=>counter()),
-           GetPage(name: '/opacity',page:()=>opacitycheck()),
-                    GetPage(name: '/switch',page:()=>switchbtn()),
+        GetPage(name: '/language', page: ()=>languagescreen()),
+        GetPage(name: '/height1',page:()=>hegwidth()),
+        GetPage(name: '/counters',page:()=>counter()),
+        GetPage(name: '/opacity',page:()=>opacitycheck()),
+        GetPage(name: '/switch',page:()=>switchbtn()),
+        GetPage(name: '/favourite',page:()=>favouriteapp()),
       ],
     );
   }
