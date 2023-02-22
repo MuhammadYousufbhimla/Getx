@@ -1,6 +1,4 @@
-
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx/controller/counter_contoller.dart';
@@ -9,7 +7,7 @@ class pickerimage extends StatefulWidget {
 
   @override
   State<pickerimage> createState() => _pickerimageState();
-}
+} 
 
 class _pickerimageState extends State<pickerimage> {
   @override
@@ -21,14 +19,16 @@ class _pickerimageState extends State<pickerimage> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          CircleAvatar(
-            radius: 40,
-            backgroundImage:controller.imagepath.isNotEmpty ?
-            FileImage(File(controller.imagepath.toString())):null
-            
-            ),
+          Center(
+            child: CircleAvatar(
+              radius: 40,
+              backgroundImage:controller.imagepath.isNotEmpty ?
+              FileImage(File(controller.imagepath.toString())):null
+              
+              ),
+          ),
           
-         SizedBox(height: Get.height*0.3,),
+         SizedBox(height: Get.height*0.1,),
         ElevatedButton(onPressed: (){
           controller.getimage();
         }, child: Text("Pick Image"))
