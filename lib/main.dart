@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
         GetPage(name: '/', page: (() => Homescreen())),
         GetPage(name: '/secondscreen', page: ()=>Secondscreen()),
         GetPage(name: '/language', page: ()=>languagescreen()),
-        GetPage(name: '/height1',page:()=>hegwidth()),
+        GetPage(name: '/heighrert1',page:()=>hegwidth()),
         GetPage(name: '/counters',page:()=>counter()),
         GetPage(name: '/opacity',page:()=>opacitycheck()),
         GetPage(name: '/switch',page:()=>switchbtn()),
