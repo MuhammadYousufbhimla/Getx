@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
         GetPage(name: '/opacity',page:()=>opacitycheck()),
         GetPage(name: '/switch',page:()=>switchbtn()),
         GetPage(name: '/favourite',page:()=>favouriteapp()),
-        GetPage(name: '/imagepicddk',page:()=>pickerimage()),
+        GetPage(name: '/imagepick',page:()=>pickerimage()),
       ],
     );
   }
